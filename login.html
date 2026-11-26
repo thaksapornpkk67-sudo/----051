@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="login-page">
+<body>
 
 <header>
-    <p class="site-name">เที่ยวบ้านเรา</p>
-    <nav aria-label="เมนูหลัก">
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="places.html">ที่เที่ยว</a></li>
-            <li><a href="food.html">อาหาร</a></li>
-            <li><a href="plan.html">วางแผนเที่ยว</a></li>
-            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
-            <li><a href="login.html" class="active">เข้าสู่ระบบ</a></li>
-        </ul>
-    </nav>
+    <h1>เที่ยวบ้านเรา</h1>
+    <p>แนะนำสถานที่ท่องเที่ยว จังหวัดประจวบคีรีขันธ์</p>
 </header>
 
-<main class="login-main">
-    <section class="premium-login">
+<nav>
+<ul>
+    <li><a href="index.html">หน้าแรก</a></li>
+    <li><a href="places.html">ที่เที่ยว</a></li>
+    <li><a href="food.html">อาหาร</a></li>
+    <li><a href="plan.html">วางแผนเที่ยว</a></li>
+    <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+    <li><a class="active" href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
 
-        <div class="premium-image">
-            <img src="images/aomanow.jpg" alt="บรรยากาศอ่าวมะนาว">
-            <div class="image-overlay">
-                <h2>DISCOVER PRACHUAP KHIRI KHAN</h2>
-                <p>ค้นพบความงดงามของบ้านเรา</p>
-                <p>TRAVEL • EXPLORE • EXPERIENCE</p>
-            </div>
+<main class="container">
+    <div class="login-page">
+        <div class="login-image">
+            <img src="images/aomanow.jpg" alt="บรรยากาศประจวบคีรีขันธ์">
         </div>
 
-        <div class="premium-form">
-            <h2>เที่ยวบ้านเรา</h2>
-            <p>WELCOME BACK</p>
-            <h1>ยินดีต้อนรับกลับมา</h1>
-            <p>เข้าสู่ระบบเพื่อใช้งานเว็บไซต์</p>
+        <div class="login-form">
+            <h2>เข้าสู่ระบบ</h2>
 
-            <form id="loginForm">
+            <form onsubmit="login(event)">
                 <label for="username">ชื่อผู้ใช้งาน</label>
                 <input type="text" id="username" placeholder="กรอกชื่อผู้ใช้งาน" required>
 
                 <label for="password">รหัสผ่าน</label>
                 <input type="password" id="password" placeholder="กรอกรหัสผ่าน" required>
 
-                <div class="remember">
-                    <label>
-                        <input type="checkbox" id="remember">
-                        จดจำฉันไว้
-                    </label>
-                </div>
-
-                <button type="submit" class="premium-button">เข้าสู่ระบบ</button>
+                <button type="submit" style="width:100%;">เข้าสู่ระบบ</button>
             </form>
 
-            <button type="button" class="create-account" onclick="alert('ระบบสมัครสมาชิกยังไม่เปิดใช้งาน')">
-                สมัครสมาชิก
-            </button>
+            <h2 style="margin-top:35px;">สมัครสมาชิก</h2>
 
-            <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์เที่ยวบ้านเรา</p>
+            <form onsubmit="register(event)">
+                <label for="newname">ชื่อผู้ใช้งาน</label>
+                <input type="text" id="newname" placeholder="ตั้งชื่อผู้ใช้งาน" required>
+
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" placeholder="กรอกอีเมล" required>
+
+                <label for="newpassword">รหัสผ่าน</label>
+                <input type="password" id="newpassword" placeholder="ตั้งรหัสผ่าน" required>
+
+                <button type="submit" style="width:100%;">สมัครสมาชิก</button>
+            </form>
         </div>
-
-    </section>
+    </div>
 </main>
 
 <footer>
@@ -73,10 +67,15 @@
 </footer>
 
 <script>
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+function login(event) {
     event.preventDefault();
-    alert("ระบบเข้าสู่ระบบยังไม่ได้เชื่อมต่อฐานข้อมูล");
-});
+    alert("ระบบเข้าสู่ระบบตัวอย่าง ยังไม่ได้เชื่อมต่อฐานข้อมูล");
+}
+
+function register(event) {
+    event.preventDefault();
+    alert("ระบบสมัครสมาชิกตัวอย่าง ยังไม่ได้เชื่อมต่อฐานข้อมูล");
+}
 </script>
 
 </body>

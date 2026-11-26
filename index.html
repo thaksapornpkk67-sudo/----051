@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | เที่ยวบ้านเรา</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>หน้าแรก | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <p class="site-name">เที่ยวบ้านเรา</p>
-    <nav aria-label="เมนูหลัก">
-        <ul>
-            <li><a href="index.html" class="active">หน้าแรก</a></li>
-            <li><a href="places.html">ที่เที่ยว</a></li>
-            <li><a href="food.html">อาหาร</a></li>
-            <li><a href="plan.html">วางแผนเที่ยว</a></li>
-            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
-            <li><a href="login.html">เข้าสู่ระบบ</a></li>
-        </ul>
-    </nav>
+    <h1>เที่ยวบ้านเรา</h1>
+    <p>แนะนำสถานที่ท่องเที่ยว จังหวัดประจวบคีรีขันธ์</p>
 </header>
 
-<main>
-    <h1>เที่ยวบ้านเราในหนึ่งวัน</h1>
-    <p class="subtitle">สถานที่ท่องเที่ยวและเรื่องราวดี ๆ ในจังหวัดประจวบคีรีขันธ์</p>
+<nav>
+<ul>
+    <li><a class="active" href="index.html">หน้าแรก</a></li>
+    <li><a href="places.html">ที่เที่ยว</a></li>
+    <li><a href="food.html">อาหาร</a></li>
+    <li><a href="plan.html">วางแผนเที่ยว</a></li>
+    <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+    <li><a href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
 
-    <section class="slider">
-        <div class="slides">
-            <img src="images/aomanow.jpg" alt="อ่าวมะนาว">
-            <img src="images/Kaow.jpg" alt="เขาช่องกระจก">
-            <img src="images/KLM.jpg" alt="สถานที่ท่องเที่ยว">
-            <img src="images/lukmuang.jpg" alt="ศาลหลักเมือง">
-            <img src="images/maptravel.jpg" alt="แผนที่การเดินทาง">
-            <img src="images/market1.jpg" alt="ตลาดชุมชน">
-            <img src="images/pic1.jpg" alt="บรรยากาศท่องเที่ยว">
-            <img src="images/pic2.jpg" alt="อาหารท้องถิ่น">
-            <img src="images/sapanpla.jpg" alt="สะพานปลา">
-        </div>
+<main class="container">
+    <h2 class="section-title">ยินดีต้อนรับสู่เว็บไซต์เที่ยวบ้านเรา</h2>
 
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </section>
-
-    <div class="dots">
-        <span onclick="currentSlide(0)"></span>
-        <span onclick="currentSlide(1)"></span>
-        <span onclick="currentSlide(2)"></span>
-        <span onclick="currentSlide(3)"></span>
-        <span onclick="currentSlide(4)"></span>
-        <span onclick="currentSlide(5)"></span>
-        <span onclick="currentSlide(6)"></span>
-        <span onclick="currentSlide(7)"></span>
-        <span onclick="currentSlide(8)"></span>
+    <div class="intro">
+        <h2>เที่ยวประจวบคีรีขันธ์</h2>
+        <p>จังหวัดประจวบคีรีขันธ์เป็นจังหวัดที่มีสถานที่ท่องเที่ยวหลากหลาย ทั้งทะเล ภูเขา วัดวาอาราม และแหล่งท่องเที่ยวทางวัฒนธรรม เหมาะสำหรับการพักผ่อนและเดินทางท่องเที่ยว</p>
     </div>
 
-    <section class="card">
-        <h2>เริ่มจากจุดที่คุณสนใจ</h2>
-        <p>ค้นพบสถานที่ท่องเที่ยว อาหารท้องถิ่น และข้อมูลการเดินทางในจังหวัดประจวบคีรีขันธ์</p>
-        <a href="places.html" class="button">ค้นหาสถานที่ท่องเที่ยว</a>
+    <div class="slideshow">
+        <img class="active" src="images/aomanow.jpg" alt="อ่าวมะนาว">
+        <img src="images/Kaow.jpg" alt="เขาช่องกระจก">
+        <img src="images/KLM.jpg" alt="สถานที่ท่องเที่ยว">
+        <img src="images/lukmuang.jpg" alt="ศาลหลักเมือง">
+        <img src="images/maptravel.jpg" alt="แผนที่การเดินทาง">
+        <img src="images/market1.jpg" alt="ตลาด">
+        <img src="images/pic1.jpg" alt="บรรยากาศท่องเที่ยว">
+        <img src="images/pic2.jpg" alt="อาหาร">
+        <img src="images/sapanpla.jpg" alt="สะพานปลา">
+
+        <button class="slide-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slide-btn next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <section>
+        <h2 class="section-title">ค้นพบประจวบคีรีขันธ์</h2>
+        <div class="cards">
+            <article class="card">
+                <img src="images/Kaow.jpg" alt="เขาช่องกระจก">
+                <div class="card-content">
+                    <h3>สถานที่ท่องเที่ยว</h3>
+                    <p>พบกับสถานที่ท่องเที่ยวที่น่าสนใจของจังหวัดประจวบคีรีขันธ์</p>
+                    <a class="btn" href="places.html">ดูสถานที่เที่ยว</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/market1.jpg" alt="อาหารท้องถิ่น">
+                <div class="card-content">
+                    <h3>อาหารท้องถิ่น</h3>
+                    <p>แนะนำอาหารและของอร่อยที่ไม่ควรพลาด</p>
+                    <a class="btn" href="food.html">ดูอาหาร</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="images/maptravel.jpg" alt="การเดินทาง">
+                <div class="card-content">
+                    <h3>วางแผนการเดินทาง</h3>
+                    <p>เตรียมตัวก่อนออกเดินทางท่องเที่ยว</p>
+                    <a class="btn" href="plan.html">วางแผนเที่ยว</a>
+                </div>
+            </article>
+        </div>
     </section>
 </main>
 
@@ -69,33 +89,33 @@
 
 <script>
 let slideIndex = 0;
-const slides = document.querySelectorAll(".slides img");
-const dots = document.querySelectorAll(".dots span");
+const slides = document.querySelectorAll(".slideshow img");
+const dotsBox = document.getElementById("dots");
 
-function showSlide(n) {
-    slideIndex = (n + slides.length) % slides.length;
+slides.forEach((slide, index) => {
+    const dot = document.createElement("span");
+    dot.className = "dot";
+    dot.onclick = () => showSlide(index);
+    dotsBox.appendChild(dot);
+});
 
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+    slideIndex = (index + slides.length) % slides.length;
     slides.forEach((slide, i) => {
-        slide.style.display = i === slideIndex ? "block" : "none";
-    });
-
-    dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === slideIndex);
+        slide.classList.toggle("active", i === slideIndex);
+        dots[i].classList.toggle("active", i === slideIndex);
     });
 }
 
-function changeSlide(n) {
-    showSlide(slideIndex + n);
-}
-
-function currentSlide(n) {
-    showSlide(n);
+function changeSlide(direction) {
+    showSlide(slideIndex + direction);
 }
 
 showSlide(0);
-setInterval(() => changeSlide(1), 3000);
+setInterval(() => changeSlide(1), 4000);
 </script>
 
 </body>
 </html>
-

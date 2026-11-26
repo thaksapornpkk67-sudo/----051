@@ -1,403 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>สถานที่ท่องเที่ยว | เที่ยวบ้านเรา</title>
+<title>ที่เที่ยว | เที่ยวบ้านเรา</title>
 <link rel="stylesheet" href="style.css">
-
-<style>
-.places-container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.places-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.places-heading h1 {
-    color: #07517e;
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.places-heading p {
-    color: #607d91;
-    line-height: 1.8;
-}
-
-.section-title {
-    color: #07517e;
-    border-left: 5px solid #159bd0;
-    padding-left: 14px;
-    margin: 35px 0 20px;
-}
-
-.destination {
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    margin-bottom: 35px;
-    box-shadow: 0 5px 20px rgba(20,70,110,.12);
-    border: 1px solid #dcecf5;
-}
-
-.destination img {
-    display: block;
-    width: 100%;
-    height: 390px;
-    object-fit: cover;
-}
-
-.destination-content {
-    padding: 30px;
-}
-
-.recommend-label {
-    display: inline-block;
-    background: #087cae;
-    color: white;
-    padding: 7px 15px;
-    border-radius: 20px;
-    font-size: 13px;
-    margin-bottom: 12px;
-}
-
-.destination-number {
-    color: #168ac0;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 13px;
-}
-
-.destination-content h2 {
-    color: #07517e;
-    font-size: 28px;
-    margin: 10px 0 18px;
-}
-
-.destination-content h3 {
-    color: #087cae;
-    font-size: 19px;
-    margin: 25px 0 10px;
-}
-
-.destination-content p {
-    color: #526777;
-    line-height: 2;
-    margin-bottom: 12px;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.info-box {
-    background: #eff8fd;
-    border-radius: 12px;
-    padding: 18px;
-}
-
-.info-box h3 {
-    margin: 0 0 8px;
-    font-size: 17px;
-}
-
-.info-box p {
-    margin: 0;
-    line-height: 1.8;
-}
-
-.open-time {
-    display: inline-block;
-    background: #e0f3ff;
-    color: #07517e;
-    padding: 12px 18px;
-    border-radius: 9px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-@media (max-width: 650px) {
-    .destination img {
-        height: 230px;
-    }
-
-    .destination-content {
-        padding: 18px;
-    }
-
-    .destination-content h2 {
-        font-size: 23px;
-    }
-
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .places-heading h1 {
-        font-size: 27px;
-    }
-}
-</style>
 </head>
-
 <body>
 
 <header>
-    <p class="site-name">เที่ยวบ้านเรา</p>
-    <nav aria-label="เมนูหลัก">
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="places.html" class="active">ที่เที่ยว</a></li>
-            <li><a href="food.html">อาหาร</a></li>
-            <li><a href="plan.html">วางแผนเที่ยว</a></li>
-            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
-            <li><a href="login.html">เข้าสู่ระบบ</a></li>
-        </ul>
-    </nav>
+    <h1>เที่ยวบ้านเรา</h1>
+    <p>แนะนำสถานที่ท่องเที่ยว จังหวัดประจวบคีรีขันธ์</p>
 </header>
 
-<main class="places-container">
+<nav>
+<ul>
+    <li><a href="index.html">หน้าแรก</a></li>
+    <li><a class="active" href="places.html">ที่เที่ยว</a></li>
+    <li><a href="food.html">อาหาร</a></li>
+    <li><a href="plan.html">วางแผนเที่ยว</a></li>
+    <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+    <li><a href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
 
-    <div class="places-heading">
-        <h1>สถานที่ท่องเที่ยว</h1>
-        <p>
-            แนะนำ 2 สถานที่สำคัญของจังหวัดประจวบคีรีขันธ์<br>
-            สัมผัสประวัติศาสตร์ วัฒนธรรม และธรรมชาติที่สวยงาม
-        </p>
+<main class="container">
+    <h2 class="section-title">สถานที่ท่องเที่ยวแนะนำ</h2>
+
+    <div class="cards">
+        <article class="card">
+            <img src="images/lukmuang.jpg" alt="ศาลหลักเมืองประจวบคีรีขันธ์">
+            <div class="card-content">
+                <span class="tag">สถานที่สำคัญ</span>
+                <h3>ศาลหลักเมืองประจวบคีรีขันธ์</h3>
+                <p>ศาลหลักเมืองเป็นสถานที่สำคัญคู่บ้านคู่เมืองของจังหวัด ตั้งอยู่บนถนนสละชีพ ตรงข้ามศาลากลางจังหวัด และอยู่ใกล้เขาช่องกระจก</p>
+                <div class="info-box">
+                    <strong>เวลาเปิดให้เข้าชม</strong>
+                    <p>ทุกวัน เวลา 08.00–19.00 น.</p>
+                </div>
+                <div class="info-box">
+                    <strong>จุดเด่น</strong>
+                    <p>มีสถาปัตยกรรมแบบจตุรมุข และองค์ปรางค์ 9 ชั้น เสาหลักเมืองทำจากไม้ตะเคียน มีชื่อว่า “จตุโชค”</p>
+                </div>
+                <div class="info-box">
+                    <strong>กิจกรรมแนะนำ</strong>
+                    <p>สักการะเสาหลักเมือง ชมสถาปัตยกรรม และถ่ายภาพเป็นที่ระลึก</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="images/Kaow.jpg" alt="เขาช่องกระจก">
+            <div class="card-content">
+                <span class="tag">จุดชมวิว</span>
+                <h3>เขาช่องกระจก</h3>
+                <p>ตั้งอยู่ด้านหลังศาลากลางจังหวัด เป็นภูเขาที่มีช่องทะลุบริเวณด้านเหนือคล้ายกรอบกระจก และเป็นสัญลักษณ์สำคัญของเมืองประจวบคีรีขันธ์</p>
+                <div class="info-box">
+                    <strong>เวลาเปิดให้เข้าชม</strong>
+                    <p>ทุกวัน เวลา 05.00–20.00 น.</p>
+                </div>
+                <div class="info-box">
+                    <strong>จุดเด่น</strong>
+                    <p>มีบันไดคอนกรีตประมาณ 396 ขั้น เมื่อขึ้นไปถึงยอดจะสามารถชมวิวเมืองและอ่าวต่าง ๆ ได้แบบ 360 องศา</p>
+                </div>
+                <div class="info-box">
+                    <strong>กิจกรรมแนะนำ</strong>
+                    <p>เดินขึ้นชมวิวเมือง สักการะพระพุทธบาทจำลอง และชมพระอาทิตย์ขึ้น</p>
+                </div>
+            </div>
+        </article>
     </div>
-
-    <h2 class="section-title">สถานที่แนะนำ</h2>
-
-    <!-- ศาลหลักเมือง -->
-    <section class="destination">
-        <img src="images/lukmuang.jpg"
-             alt="ศาลหลักเมืองประจวบคีรีขันธ์">
-
-        <div class="destination-content">
-
-            <span class="recommend-label">
-                ★ สถานที่แนะนำอันดับ 1
-            </span>
-
-            <div class="destination-number">
-                RECOMMENDED PLACE 01
-            </div>
-
-            <h2>ศาลหลักเมืองประจวบคีรีขันธ์</h2>
-
-            <p>
-                ศาลหลักเมืองประจวบคีรีขันธ์เป็นสถานที่สำคัญ
-                และเป็นศูนย์รวมจิตใจของประชาชนในจังหวัด
-                นักท่องเที่ยวและประชาชนมักเดินทางมากราบไหว้
-                เพื่อความเป็นสิริมงคล รวมถึงชมความงดงาม
-                ของสถาปัตยกรรมที่มีเอกลักษณ์
-                และเรียนรู้ประวัติความเป็นมาของเมืองประจวบคีรีขันธ์
-            </p>
-
-            <div class="info-grid">
-
-                <div class="info-box">
-                    <h3>📍 ที่ตั้ง</h3>
-                    <p>
-                        ถนนสละชีพ ตำบลประจวบคีรีขันธ์
-                        อำเภอเมืองประจวบคีรีขันธ์
-                        จังหวัดประจวบคีรีขันธ์
-                        อยู่ตรงข้ามศาลากลางจังหวัด
-                        และใกล้กับเขาช่องกระจก
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>🏛️ สถาปัตยกรรม</h3>
-                    <p>
-                        อาคารเป็นทรงจตุรมุขยอดปรางค์ 9 ชั้น
-                        มีความงดงามจากการผสมผสาน
-                        ศิลปะแบบลพบุรีและศิลปะไทย
-                        ทำให้มีรูปแบบที่โดดเด่นและสง่างาม
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>องค์หลักเมืองจตุโชค</h3>
-                    <p>
-                        ทำจากไม้ตะเคียนที่ได้มาจากอำเภอกุยบุรี
-                        ส่วนยอดแกะสลักเป็นศิลปะศรีวิชัย
-                        มี 4 เศียร 4 พักตร์ ลงรักปิดทอง
-                        และประดับอัญมณี
-                        มีความสูง 2.74 เมตร
-                        เส้นผ่านศูนย์กลาง 0.37 เมตร
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>ประวัติการก่อสร้าง</h3>
-                    <p>
-                        วางศิลาฤกษ์วันที่ 4 มีนาคม พ.ศ. 2536
-                        ต่อมาในวันที่ 8 ธันวาคม พ.ศ. 2536
-                        มีพิธีทรงสุหร่ายและเจิมยอด
-                        และประกอบพิธีเปิดศาลหลักเมืองใน พ.ศ. 2537
-                    </p>
-                </div>
-
-            </div>
-
-            <h3>สิ่งที่น่าสนใจ</h3>
-            <p>
-                ศาลหลักเมืองเป็นสถานที่ที่แสดงถึงความสำคัญ
-                ทางประวัติศาสตร์และความเชื่อของคนในท้องถิ่น
-                ผู้มาเยือนสามารถกราบไหว้สักการะ
-                ชมรายละเอียดการตกแต่งอาคาร
-                และถ่ายภาพสถาปัตยกรรมที่สวยงาม
-            </p>
-
-            <h3>กิจกรรมสำหรับนักท่องเที่ยว</h3>
-            <p>
-                • กราบไหว้ศาลหลักเมืองเพื่อความเป็นสิริมงคล<br>
-                • ชมสถาปัตยกรรมทรงจตุรมุขยอดปรางค์<br>
-                • ศึกษาประวัติความเป็นมาของเมือง<br>
-                • ถ่ายภาพบริเวณศาลหลักเมืองเป็นที่ระลึก
-            </p>
-
-            <div class="open-time">
-                เปิดทุกวัน เวลา 08.00–19.00 น.
-            </div>
-
-        </div>
-    </section>
-
-    <!-- เขาช่องกระจก -->
-    <section class="destination">
-
-        <img src="images/Kaow.jpg"
-             alt="เขาช่องกระจก">
-
-        <div class="destination-content">
-
-            <span class="recommend-label">
-                ★ สถานที่แนะนำอันดับ 2
-            </span>
-
-            <div class="destination-number">
-                RECOMMENDED PLACE 02
-            </div>
-
-            <h2>เขาช่องกระจก</h2>
-
-            <p>
-                เขาช่องกระจกเป็นสถานที่ท่องเที่ยวสำคัญ
-                และเป็นสัญลักษณ์ของเมืองประจวบคีรีขันธ์
-                ตั้งอยู่บริเวณด้านหลังศาลากลางจังหวัด
-                เป็นภูเขาที่มีจุดชมวิวสวยงาม
-                สามารถมองเห็นตัวเมือง ทะเล และอ่าวต่าง ๆ
-                ได้อย่างกว้างไกล เหมาะสำหรับผู้ที่ชื่นชอบ
-                การเดินเที่ยวชมธรรมชาติและการถ่ายภาพ
-            </p>
-
-            <div class="info-grid">
-
-                <div class="info-box">
-                    <h3>ลักษณะภูมิประเทศ</h3>
-                    <p>
-                        เป็นภูเขาขนาดย่อม สูงประมาณ
-                        245 เมตรจากระดับน้ำทะเล
-                        บริเวณด้านทิศเหนือมีช่องทะลุโปร่ง
-                        คล้ายกรอบกระจก จึงเป็นที่มาของชื่อ
-                        เขาช่องกระจก
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>การเดินขึ้นสู่ยอดเขา</h3>
-                    <p>
-                        มีบันไดคอนกรีตจำนวน 396 ขั้น
-                        นักท่องเที่ยวต้องเดินขึ้นไปตามบันได
-                        เพื่อไปยังจุดชมวิวด้านบน
-                        ควรเตรียมน้ำดื่มและสวมรองเท้าที่เหมาะสม
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>วัดธรรมิการามวรวิหาร</h3>
-                    <p>
-                        ตั้งอยู่บริเวณเขาช่องกระจก
-                        เป็นสถานที่ประดิษฐาน
-                        รอยพระพุทธบาทจำลอง
-                        และพระบรมสารีริกธาตุ
-                        เป็นสถานที่สำคัญทางพระพุทธศาสนา
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>ต้นพระศรีมหาโพธิ์</h3>
-                    <p>
-                        พระบาทสมเด็จพระบรมชนกาธิเบศร
-                        มหาภูมิพลอดุลยเดชมหาราช บรมนาถบพิตร
-                        ทรงปลูกไว้เมื่อวันที่ 12 มิถุนายน พ.ศ. 2501
-                        ถือเป็นอีกหนึ่งสิ่งสำคัญของพื้นที่
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>จุดชมวิว 360 องศา</h3>
-                    <p>
-                        สามารถมองเห็นทัศนียภาพของเมือง
-                        และอ่าวสำคัญทั้ง 3 แห่ง ได้แก่
-                        อ่าวประจวบ อ่าวมะนาว และอ่าวน้อย
-                        เป็นจุดชมวิวที่มีความสวยงาม
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>ถ้ำเทวาสถิตย์</h3>
-                    <p>
-                        เป็นอีกจุดที่น่าสนใจบนเขาช่องกระจก
-                        บริเวณนี้ยังเป็นจุดชมพระอาทิตย์ขึ้น
-                        ในช่วงเช้า เหมาะสำหรับผู้ที่ชื่นชอบ
-                        บรรยากาศธรรมชาติ
-                    </p>
-                </div>
-
-            </div>
-
-            <h3>กิจกรรมสำหรับนักท่องเที่ยว</h3>
-            <p>
-                • เดินขึ้นบันได 396 ขั้น เพื่อชมวิวบนยอดเขา<br>
-                • สักการะสิ่งศักดิ์สิทธิ์ภายในวัด<br>
-                • ชมวิวเมืองและทะเลแบบ 360 องศา<br>
-                • ถ่ายภาพทิวทัศน์ของอ่าวทั้งสาม<br>
-                • ชมบรรยากาศพระอาทิตย์ขึ้นในช่วงเช้า
-            </p>
-
-            <h3>คำแนะนำก่อนเดินทาง</h3>
-            <p>
-                ควรเลือกเดินขึ้นในช่วงเช้าหรือช่วงที่อากาศไม่ร้อน
-                เตรียมน้ำดื่มให้เพียงพอ สวมรองเท้าที่เดินสะดวก
-                และเดินด้วยความระมัดระวัง
-                โดยเฉพาะบริเวณบันไดและทางลาดชัน
-            </p>
-
-            <div class="open-time">
-                เปิดทุกวัน เวลา 05.00–20.00 น.
-            </div>
-
-        </div>
-    </section>
-
-    <div style="text-align:center; margin:40px 0;">
-        <a href="plan.html" class="button">
-            วางแผนการเดินทาง
-        </a>
-    </div>
-
 </main>
 
 <footer>

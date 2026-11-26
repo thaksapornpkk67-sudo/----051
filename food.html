@@ -1,51 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>อาหาร | เที่ยวบ้านเรา</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>อาหาร | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <p class="site-name">เที่ยวบ้านเรา</p>
-    <nav aria-label="เมนูหลัก">
-        <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="places.html">ที่เที่ยว</a></li>
-            <li><a href="food.html" class="active">อาหาร</a></li>
-            <li><a href="plan.html">วางแผนเที่ยว</a></li>
-            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
-            <li><a href="login.html">เข้าสู่ระบบ</a></li>
-        </ul>
-    </nav>
+    <h1>เที่ยวบ้านเรา</h1>
+    <p>แนะนำสถานที่ท่องเที่ยว จังหวัดประจวบคีรีขันธ์</p>
 </header>
 
-<main>
-    <h1>อาหารท้องถิ่นประจวบคีรีขันธ์</h1>
-    <p class="subtitle">แนะนำอาหารและของอร่อยที่ไม่ควรพลาด</p>
+<nav>
+<ul>
+    <li><a href="index.html">หน้าแรก</a></li>
+    <li><a href="places.html">ที่เที่ยว</a></li>
+    <li><a class="active" href="food.html">อาหาร</a></li>
+    <li><a href="plan.html">วางแผนเที่ยว</a></li>
+    <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+    <li><a href="login.html">เข้าสู่ระบบ</a></li>
+</ul>
+</nav>
 
-    <section class="food-card">
-        <img src="images/pic2.jpg" alt="อาหารทะเล">
-        <h2>อาหารทะเล</h2>
-        <p>จังหวัดประจวบคีรีขันธ์มีอาหารทะเลสดใหม่ เช่น กุ้ง หอย ปู ปลา และเมนูอาหารทะเลหลากหลายชนิด</p>
-    </section>
+<main class="container">
+    <h2 class="section-title">อาหารและของอร่อยประจวบคีรีขันธ์</h2>
 
-    <section class="food-card">
-        <img src="images/market1.jpg" alt="อาหารตลาดชุมชน">
-        <h2>อาหารตลาดชุมชน</h2>
-        <p>เลือกชิมอาหารพื้นบ้าน ขนม และของกินหลากหลายชนิดจากร้านค้าท้องถิ่น</p>
-    </section>
+    <div class="intro">
+        <p>จังหวัดประจวบคีรีขันธ์มีอาหารหลากหลาย โดยเฉพาะอาหารทะเลสด ๆ รวมถึงอาหารพื้นบ้านและของกินจากตลาดท้องถิ่นที่นักท่องเที่ยวสามารถเลือกชิมได้</p>
+    </div>
 
-    <section class="food-card">
-        <img src="images/pic1.jpg" alt="อาหารและขนมท้องถิ่น">
-        <h2>ขนมและของฝาก</h2>
-        <p>เลือกซื้อขนมและของฝากประจำจังหวัด เพื่อนำกลับไปฝากครอบครัวและเพื่อน ๆ</p>
-    </section>
+    <div class="cards">
+        <article class="card">
+            <img src="images/pic2.jpg" alt="อาหารทะเล">
+            <div class="card-content">
+                <h3>อาหารทะเล</h3>
+                <p>อาหารทะเลสดใหม่ เช่น กุ้ง หอย ปู ปลา และหมึก สามารถนำมาปรุงเป็นอาหารได้หลากหลายเมนู</p>
+            </div>
+        </article>
 
-    <a href="places.html" class="button">กลับไปดูสถานที่ท่องเที่ยว</a>
+        <article class="card">
+            <img src="images/market1.jpg" alt="อาหารตลาด">
+            <div class="card-content">
+                <h3>อาหารจากตลาดท้องถิ่น</h3>
+                <p>มีอาหารปรุงสำเร็จ ของกินเล่น และขนมต่าง ๆ ให้เลือกซื้อ เหมาะสำหรับเดินชิมและสัมผัสบรรยากาศท้องถิ่น</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="images/pic1.jpg" alt="อาหารพื้นบ้าน">
+            <div class="card-content">
+                <h3>อาหารพื้นบ้าน</h3>
+                <p>ลิ้มลองอาหารท้องถิ่นที่มีรสชาติเป็นเอกลักษณ์ และเมนูที่สะท้อนวิถีชีวิตของคนในพื้นที่</p>
+            </div>
+        </article>
+    </div>
 </main>
 
 <footer>
