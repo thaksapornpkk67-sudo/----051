@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วางแผนเที่ยว | เที่ยวบ้านเรา</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <p class="site-name">เที่ยวบ้านเรา</p>
+    <nav aria-label="เมนูหลัก">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">ที่เที่ยว</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="plan.html" class="active">วางแผนเที่ยว</a></li>
+            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>วางแผนเที่ยวประจวบคีรีขันธ์</h1>
+    <p class="subtitle">เตรียมตัวให้พร้อมก่อนออกเดินทาง</p>
+
+    <section class="plan-images">
+        <div class="plan-place">
+            <img src="images/aomanow.jpg" alt="อ่าวมะนาว">
+            <h3>อ่าวมะนาว</h3>
+        </div>
+        <div class="plan-place">
+            <img src="images/Kaow.jpg" alt="เขาช่องกระจก">
+            <h3>เขาช่องกระจก</h3>
+        </div>
+        <div class="plan-place">
+            <img src="images/sapanpla.jpg" alt="สะพานปลา">
+            <h3>สะพานปลา</h3>
+        </div>
+    </section>
+
+    <section class="plan-card">
+        <h2>แบบฟอร์มวางแผนการท่องเที่ยว</h2>
+
+        <form id="travelForm">
+            <label for="name">ชื่อผู้เดินทาง</label>
+            <input type="text" id="name" required>
+
+            <label for="date">วันที่ต้องการเดินทาง</label>
+            <input type="date" id="date" required>
+
+            <label for="people">จำนวนผู้เดินทาง</label>
+            <input type="number" id="people" min="1" required>
+
+            <label for="place">สถานที่ที่ต้องการไป</label>
+            <select id="place" required>
+                <option value="">-- เลือกสถานที่ --</option>
+                <option>อ่าวมะนาว</option>
+                <option>เขาช่องกระจก</option>
+                <option>ศาลหลักเมืองประจวบคีรีขันธ์</option>
+                <option>สะพานปลา</option>
+                <option>ตลาดชุมชน</option>
+            </select>
+
+            <label for="details">รายละเอียดเพิ่มเติม</label>
+            <textarea id="details" rows="4" placeholder="ระบุรายละเอียดเพิ่มเติม"></textarea>
+
+            <button type="submit" class="button">บันทึกแผนการเที่ยว</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>จัดทำโดยทักษพร051</p>
+    <p>ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+<script>
+document.getElementById("travelForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("บันทึกแผนการเที่ยวเรียบร้อยแล้ว");
+});
+</script>
+
+</body>
+</html>
